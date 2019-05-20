@@ -1,5 +1,16 @@
 {%extends 'gallery/base.html'%}
+{% load static%}
 
 {% block content %}
 {{block.super}}
+<div class='container'>
+    <div class='row'>
+        <div class='col-sm-2'></div>
+        <div class='col-sm-8' >    <img src="{{ image.image.image.url }}" class="img-responsive" alt="Image">   </div>
+        <div class='col-sm-2'></div>
+    </div>
+
+</div>
+
+
 {% endblock %}
