@@ -1,7 +1,74 @@
-h1{
-  color: green;
+body{
+  background-color:whitesmoke;
 }
-img{
+h1{
+  color:black;
+  font-size: 22px;
+}
+p{
+  font-size: 20px;
+}
+
+.navbar-brand{
+  font-family: 'Macondo Swash Caps', cursive;
+  color: red;
+  font-size: 30px;
+}
+
+.title{
+  font-family: 'Special Elite', cursive;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
   width: 100%;
-  height: 80%;
+  font-size: 18px;
+
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+#modalQuickView .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+#modalQuickView.price {
+  color: grey;
+  font-size: 22px;
+}
+
+#modalQuickView .card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+#modalQuickView .card button:hover {
+  opacity: 0.7;
 }

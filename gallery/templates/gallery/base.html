@@ -12,19 +12,24 @@
 
     {% block styles %}
     {% bootstrap_css %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Macondo+Swash+Caps|Special+Elite&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="{% static 'css/gallerystyles.css' %}">
     {% endblock %}
 
 </head>
 
 <body>
-        {% include "gallery/navbar.html" %}
+    {% include "gallery/navbar.html" %}
 
     {%  block content%}
-    <h1 class='text-center'>hello again</h1>
+   
     {%endblock%}
 
     {% block scripts %}
+
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     {% bootstrap_javascript %}
     {% endblock %}

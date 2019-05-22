@@ -1,0 +1,55 @@
+{%extends 'gallery/base.html'%}
+{% load static%}
+{% block content %}
+<div class="container">
+
+    <div class="row">
+        {% if searched_images %}
+        <h2>Found {{ searched_images|length }} of searched term {{message}}</h2>
+        {% else %}
+        <h2> Found 0 articles for the search term {{message}}</h2>
+        {% endif %}
+
+    </div>
+
+    <div class="row">
+
+        {% if searched_images %}
+        {% for picture in searched_images %}
+        <div class="col-sm-6 col-md-3">
+            <img src="{{ picture.image.url }}" class="img-responsive" alt="image" style="width:100%">
+            <h1><a href="#" data-toggle="modal" data-target="#modalQuickView"> <strong>{{ picture.title }}
+                </strong></a> </h1>
+
+        </div>
+
+    <!-- Modal: modalQuickView -->
+    <div class="modal fade" style="text-align:center" id="modalQuickView" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <img src="{{ picture.image.url }}" class="img-responsive" alt="image" style="width:100%">
+                        </div>
+                        <div class="col-lg-5">
+                            <h2 class="h2-responsive product-name">
+                                <strong> {{ picture.title }} </strong>
+                            </h2>
+                            <p>{{ picture.description }}</p>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        {% endfor %}
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
