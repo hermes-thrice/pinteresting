@@ -1,6 +1,6 @@
 # Pinteresting
 
-A clone of pinterest to show how a hallery app can be built with django
+A clone of pinterest to show how a gallery app can be built with django
 
 ## Getting Started
 
