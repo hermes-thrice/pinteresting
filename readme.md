@@ -5,7 +5,7 @@ A clone of pinterest to show how a hallery app can be built with django
 ## Getting Started
 
 The instructions below will help you get started 
-The link to the repo is [pinteresting](https://github.com/madskillz254/pinteresting)
+The link to the repo is [pinteresting] (https://github.com/madskillz254/pinteresting)
 
 ### Prerequisites
 
