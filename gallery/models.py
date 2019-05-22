@@ -33,7 +33,7 @@ class Image(models.Model):
 
     @classmethod
     def all_images(cls):
-        photo_gallery=cls.objects.all()
+        photo_gallery=cls.objects.all()[::-1]
         return photo_gallery
 
     class Meta:
@@ -43,6 +43,7 @@ class Image(models.Model):
     def search_by_title(cls,search_term):
         photo_gallery=cls.objects.filter(title__icontains=search_term)
         return photo_gallery
+
 
     @classmethod
     def filter_by_location(cls,location):

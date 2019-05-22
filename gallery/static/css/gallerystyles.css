@@ -1,5 +1,6 @@
 body{
   background-color:whitesmoke;
+  overflow-x: hidden;
 }
 h1{
   color:black;
@@ -72,3 +73,27 @@ p{
 #modalQuickView .card button:hover {
   opacity: 0.7;
 }
+
+.searchBar{
+  width: 200vh;
+}
+.searchBar input{
+  background: gray;
+  color: beige;
+}
+.searchBar ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+@media only screen and (max-width: 1680px) {
+  .searchBar{
+    width: 100vh;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .searchBar{
+    width: auto;
+  }
+}
+
